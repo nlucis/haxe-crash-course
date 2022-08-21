@@ -1,3 +1,10 @@
--cp src\
---main Main
---js bin/main.js
+-cp src
+-D analyzer-optimize
+-main Main
+
+--each
+--interp
+
+--next
+--js web/js/main.js
+
