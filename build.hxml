@@ -1,4 +1,10 @@
 -cp src
 -D analyzer-optimize
 -main Main
+
+--each
 --interp
+
+--next
+--js bin/main.js
+
