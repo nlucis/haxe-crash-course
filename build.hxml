@@ -6,5 +6,5 @@
 --interp
 
 --next
---js bin/main.js
+--js web/js/main.js
 
