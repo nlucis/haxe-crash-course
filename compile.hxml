@@ -1,12 +1,22 @@
 -cp src
 -lib heaps
+# SDL/OpenGL
+-lib hlsdl
+# DirectX 
+# -lib hldx
 -D analyzer-optimize
 -main Main
 --debug
 #--no traces
 
+# interpreter mode is incompatible with debug mode as far as I can tell
 # --each
 # --interp
 # --next
 
---js web/js/main.js
+# HL and JS cannot be simultaneously targetted, even with --each
+# --each
+# --js web/js/main.js
+# --next
+--hl out/hello.hl
+
