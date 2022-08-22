@@ -1,0 +1,29 @@
+# Directory to compile
+-cp src
+
+# Libraries
+-lib heaps
+
+# SDL/OpenGL
+-lib hlsdl
+
+# DirectX 
+# -lib hldx
+
+# Configuration Options
+-D analyzer-optimize
+-main Main
+--debug
+#--no traces
+
+# interpreter mode is incompatible with debug mode as far as I can tell
+# --each
+# --interp
+# --next
+
+# HL and JS cannot be simultaneously targetted, even with --each
+# --each
+# --js web/js/main.js
+# --next
+--hl out/hello.hl
+
