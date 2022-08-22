@@ -1,35 +1,37 @@
-# Directory to compile
+### Source Code Root ###
 -cp src
 
-# Libraries:
+### LIBRARIES ###
+# Heaps.io Game Engien
 -lib heaps
 
 # SDL/OpenGL
 -lib hlsdl
 
-# DirectX 
+# DirectX (Windows)
 # -lib hldx
 
-# Configuration Options
+### CONFIG ###
 -D analyzer-optimize
 -D windowSize=1000x1000
 -main Main
 --debug
 #--no traces
 
-# interpreter mode
-# --each
+### TARGETS ###
+--each
+
+# Haxe Interpreter
 # --interp
 # --next
 
-# HTML5 mode
-# --each
+# HTML5
 # --js web/js/main.js
 # --next
 
-# For both hashlink and native bytecode
---each
+# Hashlink
 --hl out/hello.hl
 --next
---hl out/build/hello.c
 
+# Native C
+--hl out/build/hello.c
