@@ -1,0 +1,31 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Haxe Interpreter",
+			"type": "haxe-eval",
+			"request": "launch"
+		},
+		{
+			"name": "Launch Firefox Dev against localhost",
+			"type": "firefox",
+			"request": "launch",
+			"url": "file://${workspaceFolder}/web/index.html",
+			"webRoot": "${workspaceFolder}/web/",
+			"preLaunchTask": {
+				"type" : "haxe",
+				"args" : "active configuration"
+			}
+		},
+		{
+			"name": "HashLink",
+			"request": "launch",
+			"type": "hl",
+			"cwd": "${workspaceFolder}",
+			"preLaunchTask": {
+					"type": "haxe",
+					"args": "active configuration"
+			}
+	}
+	]
+}
