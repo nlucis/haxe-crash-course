@@ -8,6 +8,16 @@
 				"kind": "build",
 				"isDefault": true
 			}
+		},
+		{
+			"label": "localhost",
+			"command": "live-server",
+			"args": [ "./web/" ],
+			"type": "shell",
+			"group": {
+				"kind": "build",
+				"isDefault": false
+			}
 		}
 	]
 }

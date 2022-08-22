@@ -12,10 +12,7 @@
 			"request": "launch",
 			"url": "file://${workspaceFolder}/web/index.html",
 			"webRoot": "${workspaceFolder}/web/",
-			"preLaunchTask": {
-				"type" : "haxe",
-				"args" : "active configuration"
-			}
+			"preLaunchTask": "localhost"
 		},
 		{
 			"name": "HashLink",
