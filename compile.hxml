@@ -5,8 +5,8 @@
 --debug
 #--no traces
 
---each
---interp
+# --each
+# --interp
+# --next
 
---next
 --js web/js/main.js
