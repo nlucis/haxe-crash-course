@@ -1,0 +1,8 @@
+{
+"version":3,
+"file":"main.js",
+"sourceRoot":"",
+"sources":["file:///d:/code/Haxe/haxe-crash-course/src/Main.hx","file:///C:/HaxeToolkit/haxe/std/haxe/iterators/ArrayIterator.hx"],
+"names":[],
+"mappings":";;YACwB;AAAA,CACtB,6BAAM;AADgB,CAGtB,YAAoB;AAHE,CAMZ;AANY,CAMtB,KAAK,CAAK,KAAI,GAAd;AAAA,EAAU;AAAV,EACC,SAAS,SAAS,KAAK,UAAU,OAAG;AADrC;AANsB,CAUtB,8BAAO,cAAU,QAAK;AAVA,CAatB,8BAAM;AAbgB;mCCiCf,gBAPT;AAAA,CAEmB,AAAlB,eAAkB;AAFnB,CASE,aAAa;AATf;;UAgB2B,WACzB;AAAA,SAAO,eAAU;AAAjB;QAOsB,WACtB;AAAA,SAAO,WAAM;AAAb;;;;;"
+}

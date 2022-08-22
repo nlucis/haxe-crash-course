@@ -1,10 +1,12 @@
 -cp src
+-lib heaps
 -D analyzer-optimize
 -main Main
+--debug
+#--no traces
 
 --each
 --interp
 
 --next
 --js web/js/main.js
-

@@ -25,3 +25,5 @@ haxe_iterators_ArrayIterator.prototype = {
 };
 Main.main();
 })({});
+
+//# sourceMappingURL=main.js.map
