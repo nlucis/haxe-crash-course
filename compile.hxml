@@ -12,6 +12,7 @@
 
 # Configuration Options
 -D analyzer-optimize
+-D windowSize=1000x1000
 -main Main
 --debug
 #--no traces
@@ -25,5 +26,10 @@
 # --each
 # --js web/js/main.js
 # --next
+
+# For both hashlink and native bytecode
+--each
 --hl out/hello.hl
+--next
+--hl out/native/hello.c
 
