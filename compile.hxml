@@ -26,5 +26,10 @@
 # --each
 # --js web/js/main.js
 # --next
+
+# For both hashlink and native bytecode
+--each
 --hl out/hello.hl
+--next
+--hl out/native/hello.c
 
