@@ -31,5 +31,5 @@
 --each
 --hl out/hello.hl
 --next
---hl out/native/hello.c
+--hl out/build/hello.c
 
