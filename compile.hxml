@@ -1,7 +1,7 @@
 # Directory to compile
 -cp src
 
-# Libraries
+# Libraries:
 -lib heaps
 
 # SDL/OpenGL
@@ -17,12 +17,12 @@
 --debug
 #--no traces
 
-# interpreter mode is incompatible with debug mode as far as I can tell
+# interpreter mode
 # --each
 # --interp
 # --next
 
-# HL and JS cannot be simultaneously targetted, even with --each
+# HTML5 mode
 # --each
 # --js web/js/main.js
 # --next
