@@ -1,9 +1,16 @@
+# Directory to compile
 -cp src
+
+# Libraries
 -lib heaps
+
 # SDL/OpenGL
 -lib hlsdl
+
 # DirectX 
 # -lib hldx
+
+# Configuration Options
 -D analyzer-optimize
 -main Main
 --debug
