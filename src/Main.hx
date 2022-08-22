@@ -12,10 +12,13 @@ class Main extends hxd.App {
 		var moreText = new h2d.Text(DefaultFont.get(), objectThing);
 		moreText.text = "The music scene has got me down...";
 		objectThing.y = 24;
+		objectThing.x= 500;
+		objectThing.rotation = Math.PI / 2;
 		s2d.addChild(objectThing); // Nothing in container, so nothing renders
 
 		var textFontThingContainer = new h2d.Object();
 		textFontThingContainer.addChild(textFontThing);
+		textFontThingContainer.x = 500;
 		s2d.addChild(textFontThingContainer);
 	}
 
