@@ -1,4 +1,6 @@
 import hxd.res.DefaultFont;
+import scene.TestScene;
+
 
 class Main extends hxd.App {
 
@@ -20,6 +22,8 @@ class Main extends hxd.App {
 		textFontThingContainer.addChild(textFontThing);
 		textFontThingContainer.x = 500;
 		s2d.addChild(textFontThingContainer);
+
+
 	}
 
 	static function main() {
@@ -30,3 +34,5 @@ class Main extends hxd.App {
 		#end
 	}
 }
+
+

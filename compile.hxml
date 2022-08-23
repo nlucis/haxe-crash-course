@@ -2,7 +2,7 @@
 -cp src
 
 ### LIBRARIES ###
-# Heaps.io Game Engien
+# Heaps.io Game Engine
 -lib heaps
 
 # SDL/OpenGL
@@ -14,6 +14,7 @@
 ### CONFIG ###
 -D analyzer-optimize
 -D windowSize=1000x1000
+-D resourcePath="res"
 -main Main
 --debug
 #--no traces
@@ -21,7 +22,7 @@
 ### TARGETS ###
 --each
 
-# Haxe Interpreter
+# Haxe Interpreter (does not play nice with Heaps)
 # --interp
 # --next
 
