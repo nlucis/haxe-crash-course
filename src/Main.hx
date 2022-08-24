@@ -1,10 +1,29 @@
-import hxd.res.DefaultFont;
+import h2d.Anim;
+import h2d.Tile;
+import h3d.Vector;
+import hxd.res.Image;
 import scene.TestScene;
+import hxd.res.DefaultFont;
 
 
 class Main extends hxd.App {
 
+	private var bitmap: h2d.Bitmap;
+	private var tileset: Array<Tile> = [];
+	private var coloredTileAnimation: Anim;
+
+	private var velocity: Float = 0;
+	private var gravity: Float = 9.8;
+
+	private var chunksize: Float = 100;
+
+	private function makeRandomColor(): Int {
+		return new Vector(Random.float(0.0, 1.0), Random.float(0.0, 1.0), Random.float(0.0, 1.0), 1).toColor();
+	}
+
 	override function init() {
+		// embed the resources
+		hxd.Res.initEmbed();
 
 		var textFontThing = new h2d.Text(hxd.res.DefaultFont.get()); /* can also take a second param of a target container */
 		textFontThing.text = "Unga Bunga Game Times!";
@@ -23,8 +42,31 @@ class Main extends hxd.App {
 		textFontThingContainer.x = 500;
 		s2d.addChild(textFontThingContainer);
 
+		// Make a set of randomly colored tiles
+		for (count in 0...10) {
+			var newTile = Tile.fromColor(makeRandomColor(), 50, 50);
+			newTile.dx = -newTile.width * 0.5;
+			newTile.dy = -newTile.height * 0.5;
+			tileset.push(newTile);
+		}
+		
+		coloredTileAnimation = new h2d.Anim(tileset, s2d);
+		coloredTileAnimation.loop = true;
+		coloredTileAnimation.speed = 2.4;
 
+		// bitmap = new h2d.Bitmap(tile, s2d);
+		// bitmap.setPosition(500, 500);
+		coloredTileAnimation.setPosition(500, 500);
 	}
+
+	override function update(dt: Float) {
+		coloredTileAnimation.rotate(dt);
+		// bitmap.y += velocity * chunksize * dt;
+		// bitmap.rotate(dt);
+		// bitmap.color = new Vector(Random.float(0.0, dt * chunksize), Random.float(0.0, dt * chunksize), Random.float(0.0, dt * chunksize), 1);
+	}
+
+	public function fixedUpdate() {}
 
 	static function main() {
 		new Main();
