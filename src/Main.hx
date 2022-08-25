@@ -50,12 +50,12 @@ class Main extends hxd.App {
 			tileset.push(newTile);
 		}
 		
-		var maun = hxd.Res.images.WallTileAtlas_Vertical24;
-		var maunTile = maun.toTile();
-		maunTile.scaleToSize(50, 50);
-		maunTile.dx = -maunTile.width * 0.5;
-		maunTile.dy = -maunTile.height * 0.5;
-		tileset.push(maunTile);
+		var wall = hxd.Res.images.WallTileAtlas_Vertical24;
+		var wallTile = wall.toTile();
+		wallTile.scaleToSize(50, 50);
+		wallTile.dx = -wallTile.width * 0.5;
+		wallTile.dy = -wallTile.height * 0.5;
+		tileset.push(wallTile);
 
 		coloredTileAnimation = new h2d.Anim(tileset, s2d);
 		coloredTileAnimation.loop = true;
@@ -65,8 +65,12 @@ class Main extends hxd.App {
 		// bitmap.setPosition(500, 500);
 		coloredTileAnimation.setPosition(500, 500);
 
-	// will load myImage.png/jpg/jpeg/gif from <your project folder>/res/img/
-		// var maunTile = myimage.toTile();
+		var maun = hxd.Res.images.SmallGlorbling;
+		var maunTile = maun.toTile();
+		maunTile.dx = -maunTile.width * 0.5;
+		maunTile.dy = -maunTile.height * 0.5;
+		bitmap = new h2d.Bitmap(maunTile, s2d);
+		bitmap.setPosition(500, 700);
 	}
 
 	override function update(dt: Float) {

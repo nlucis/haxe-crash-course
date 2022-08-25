@@ -13,12 +13,13 @@
 
 # Game stuff #
 -lib random
--lib box2d
+-lib echo
 
-### CONFIG ###
+### CONFIG & FLAGS ###
 -D analyzer-optimize
 -D windowSize=1000x1000
 -D resourcePath="res"
+-D -D ECHO_USE_HEAPS
 -main Main
 --debug
 #--no traces
